@@ -1,8 +1,87 @@
 
-.bord_img {
-    border: 1px solid #e2e2e2;
-    padding: 8px;
+
+
+.form__select {
+    height: 45px;
+    width: 300px;
+    font-size: 13px;
+    font-weight: 400;
+    color: #000000;
+    margin-bottom: 40px;
+    font-family: 'Roboto', sans-serif;
 }
+.form__select:focus {
+    background-color: #e9f8ff;
+    color: #000000;
+}
+
+.form__input {
+    height: 39px;
+    width: 292px;
+    font-size: 13px;
+    font-weight: 400;
+    color: #999999;
+}
+.form__input:focus {
+    background-color: #e9f8ff;
+    color: #000000;
+}
+
+.form__input:focus::placeholder {
+    background-color: #e9f8ff;
+    color: #999999;
+}
+.form__inner {
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}    
+
+.form {
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+/* Galery*/
+
+.bord_img {
+    max-width: 260px;
+    display: inline-block;
+    vertical-align: top;
+    padding: 11px;
+    position: relative;
+}
+.bord_img:before,
+.bord_img:after {
+  content: "";
+  position: absolute;
+  border: 1px solid #e2e2e2;
+  width: calc(100% - 10px);
+  height: calc(100% - 10px);
+}
+
+.bord_img:before {
+  top: 0;
+  left: 0;
+  border-right: none;
+  border-bottom: none;
+}
+
+.bord_img:after {
+    right: 0;
+    bottom: 0;
+    border-left: none;
+    border-top: none;
+}
+
+.bord_img_inner {
+  display: block;
+}
+/* авав */
 
 .background_floats_center_four {
     height: 127px;
@@ -15,9 +94,9 @@
 
 .floats_3 {
     text-align: center;
-    font-family: 'Roboto', sans-serif;
     font-weight: 700;
     font-size: 24px;
+    margin-bottom: 8px;
 }
 
 /*floats center*/
@@ -27,7 +106,6 @@
 }
 
 .date {
-    font-family: 'Roboto', sans-serif;
     font-weight: 400;
     font-size: 16px;
     color: #6e6e6e;
@@ -38,12 +116,10 @@
 }
 
 .name {
-    font-family: 'Roboto', sans-serif;
     font-weight: 700;
     font-size: 20px;
 }
 .background_floats_center_three {
-    font-family: 'Roboto', sans-serif;
     font-weight: 400;
     font-size: 16px;
     height: 269px;
@@ -51,20 +127,20 @@
 
 .background_floats_center_two {
     border-bottom: 1px solid #c6c6c6;
-    font-family: 'Roboto', sans-serif;
     font-weight: 400;
     font-size: 16px;
     height: 262px;
 }
 
 .background_floats_center_one {
-    border-bottom: 1px solid #c6c6c6;
-    font-family: 'Roboto', sans-serif;
     font-weight: 400;
     font-size: 16px;
     height: 226px;
 }
-
+.reviews_bord {
+    border-bottom: 1px solid #c6c6c6;
+    margin-bottom: 30px;
+}
 /*floats top*/
 
 .margfloats {
@@ -78,7 +154,7 @@
 }
 
 .floats__bord {
-    width: 202px;
+    max-width: 202px;
     height: 5px;
     margin: 0;
     background-color: #c3c3c3;
@@ -86,14 +162,14 @@
 
 .floats_inner {
     margin-top: 60px;
-    font-family: 'Roboto', sans-serif;
+    margin-bottom: 8px;
     font-weight: 700;
     font-size: 24px;
 }
 
 .floats {
     margin-top: 54px;
-    font-family: 'Roboto', sans-serif;
+    margin-bottom: 8px;
     font-weight: 700;
     font-size: 24px;
 }
@@ -102,11 +178,11 @@
 /*header*/
 
 .header__butn { 
-    margin-left: auto;
-    text-align:center; 
-    padding:24px 37px; 
-    border:none; 
     font-family: 'Roboto', sans-serif;
+    margin-left: auto;
+    text-align: center; 
+    padding: 24px 37px; 
+    border: none; 
     font-size: 20px;
     font-weight: 400; 
     color:#333333; 
@@ -135,7 +211,6 @@
     display: flex;
     list-style: none;
     padding-left: 0;
-    font-family: 'Roboto', sans-serif;
     font-weight: 700;
     font-size: 20px; 
 }
@@ -146,7 +221,6 @@
     color: black;
     text-decoration: none;
     padding: 15px;
-    font-family: 'Roboto', sans-serif;
     font-weight: 400;
     font-size: 20px; 
 }
@@ -175,7 +249,6 @@
 .header__name {
     margin-left: 7px;
     margin-right: 57px;
-    font-family: 'Roboto', sans-serif;
     font-size: 48px;
     font-weight: 900;
 }
@@ -187,7 +260,7 @@
 }
 
 .container_center {
-    width: 1252px;
+    max-width: 1252px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -199,5 +272,6 @@ header {
 
 
 body {
+    font-family: 'Roboto', sans-serif;
     margin: 0;
 }
