@@ -1,6 +1,80 @@
 
 
 
+
+
+
+
+
+/* Формы ввода (textarea)*/
+
+.user__input {
+    width: 615px;
+    height: 170px;
+    resize: none;
+    font-size: 13px;
+    font-weight: 400;
+    color: #999999;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+.user__input:focus {
+    background-color: #e9f8ff;
+    color: #000000;
+}
+
+/*Форма с замком*/
+.form__background {
+    position: relative;
+}
+.background__input {
+    padding-left: 50px;
+    height: 39px;
+    width: 300px;
+    font-size: 13px;
+    font-weight: 400;
+    color: #999999;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+.background__input:focus ~ .input__inner__img {
+    opacity: 1;
+    background-color: #e9f8ff;
+    color: #000000;
+}
+.background__input:focus ~ .input__img {
+    opacity: 0;
+    background-color: #e9f8ff;
+    color: #000000;
+}
+
+.background__input:focus::placeholder {
+    background-color: #e9f8ff;
+    color: #999999;
+}
+.input__inner__img {
+    position: absolute;
+    opacity: 0;
+    top: 4px;
+    left: 4px;
+    width: 28px;
+    height: 32px;
+    background-repeat: no-repeat;
+    background-image: url(../img/lock.png);
+}
+
+.input__img {
+    position: absolute;
+    top: 4px;
+    left: 2px;
+    width: 28px;
+    height: 32px;
+    background-position-x: 50px;
+    background-image: url(../img/icon.png);
+}
+
+/* ------------------------ */
+
 .form__select {
     height: 45px;
     width: 300px;
@@ -9,6 +83,7 @@
     color: #000000;
     margin-bottom: 40px;
     font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
 }
 .form__select:focus {
     background-color: #e9f8ff;
@@ -17,10 +92,12 @@
 
 .form__input {
     height: 39px;
-    width: 292px;
+    width: 300px;
     font-size: 13px;
     font-weight: 400;
     color: #999999;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 .form__input:focus {
     background-color: #e9f8ff;
