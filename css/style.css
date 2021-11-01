@@ -1,9 +1,47 @@
 
 
 
+/* Кнопки*/
 
+.checkbox__text {
+    margin-left: 30px;
+    font-weight: 700;
+    font-size: 13px;
+}
+.checkbox__wrap {
+    position: relative;
+}
 
+.checkbox__inner {
+    display: none;
+}
 
+.checkbox__inner:checked ~ .input__checkbox .checkbox__cor {
+    opacity: 1;
+}
+
+.input__checkbox {
+    position: relative;
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    border: 1px solid #9c9dcd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.checkbox__cor {
+    position: absolute;
+    opacity: 0;
+    width: 15px;
+    height: 15px;
+    left: 4px;
+    top: 4px;
+    border-radius: 5px;
+    background-color: #52359d;
+}
 
 
 /* Формы ввода (textarea)*/
